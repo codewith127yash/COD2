@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("./weather.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Keeps the background fixed on scroll */
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.5); /* 50% transparent black background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white; /* Make sure the text is readable on the transparent background */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#cityInput {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+#searchButton {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-left: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+}
+
+#searchButton:hover {
+    background-color: #0056b3;
+}
+
+.weather-info {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.weather-info p {
+    margin: 5px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.loading {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.error-message {
+    color: red;
+    margin-top: 20px;
+}
+
+.temperature-warm {
+    color: #ff5722;
+}
+
+.temperature-cool {
+    color: #03a9f4;
+}
